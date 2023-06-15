@@ -1,17 +1,14 @@
+import './pages/navbar/Navbar.css';
 import './App.css';
 import Navbar from './pages/navbar/Navbar';
-import Matches from './pages/matches/Matches';
-import Index from './pages/homepage/Index';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
+import CustomPageBody from './pages/custom_page_body/CustomPageBody';
 
 function App() {
   return (
-    <BrowserRouter basename={window.location.pathname || ''}>
+    <BrowserRouter>
       <Navbar/>
-        <Routes>
-          <Route exact path="/" element={<Index/>}/>
-          <Route exact path="/Matches" element={<Matches/>}/>
-        </Routes>
+      <CustomPageBody/>
     </BrowserRouter>
   );
 }
