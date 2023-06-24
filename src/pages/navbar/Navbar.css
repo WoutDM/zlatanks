@@ -58,9 +58,18 @@ nav a {
   align-items: center;
 }
 
+#navbar_top_right {
+  height: 30px;
+}
+
+.icons {
+  height: 100%;
+  width: auto;
+}
+
 #button_player_login {
   width: 120px;
-  height: 30px;
+  height: 100%;
   background-color: white;
   color: #E40C2B;
   font-weight: 800;
