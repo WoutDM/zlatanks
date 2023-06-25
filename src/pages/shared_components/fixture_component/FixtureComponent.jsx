@@ -21,10 +21,15 @@ export default function FixtureComponent({matchData, isNextMatch}) {
         (
           <div id='nextMatchFixtureDateRed'>{matchData.date}</div>
         ) 
-        : 
+        : null
+      }
+      <div id='fixtureMatchResult'>{matchData.result}</div>
+    
+      {
+        !isNextMatch ?
         (
           <div id='nextMatchFixtureDate'>{matchData.date}</div>
-        )
+        ) : null
       }
       {
         !matchData.result ? 
@@ -32,7 +37,6 @@ export default function FixtureComponent({matchData, isNextMatch}) {
           <div id='fixtureHoure'>{matchData.houre}</div>
         ) : null
       }
-      <div id='fixtureMatchResult'>{matchData.result}</div>
     </div>
   );
 }

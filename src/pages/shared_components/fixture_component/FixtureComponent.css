@@ -15,7 +15,7 @@
 
 #nextMatchFixtureDate {
   font-weight: 500;
-  font-size: large;
+  font-size: small;
 }
 
 #fixtureHoure {
@@ -36,5 +36,8 @@
 }
 
 #fixtureMatchResult {
-  color: grey;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  text-decoration: underline red;
 }
