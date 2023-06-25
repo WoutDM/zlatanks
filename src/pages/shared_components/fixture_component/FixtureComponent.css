@@ -1,0 +1,40 @@
+#FixtureComponent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+  min-width: 12%;
+  margin-bottom: 25px;
+}
+
+#nextMatchFixtureDateRed {
+  color: red;
+  font-weight: bold;
+  font-size: larger;
+}
+
+#nextMatchFixtureDate {
+  font-weight: 500;
+  font-size: large;
+}
+
+#fixtureHoure {
+  color: grey;
+}
+
+#FixtureComponent img {
+  height: 30px;
+}
+
+#fixture_teams {
+  font-size: 150%;
+  height: 50px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#fixtureMatchResult {
+  color: grey;
+}
