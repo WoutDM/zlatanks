@@ -1,12 +1,11 @@
 import './Index.css';
 import matches from '../../data/matches';
-import FixtureComponent from '../shared_components/fixture_component/FixtureComponent';
-import React, { useState, useEffect } from 'react';
+import FixtureComponent from '../homepage/components/fixture_component/FixtureComponent';
+import React, { useState } from 'react';
 
 export default function Index() {
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  let amountOfFixtures = 5;
 
   const handleResize = () => {
     setWindowWidth(window.innerWidth);

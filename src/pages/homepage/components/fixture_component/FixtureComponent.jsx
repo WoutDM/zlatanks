@@ -1,5 +1,5 @@
 import './FixtureComponent.css';
-import zlatanks_transparant_logo from '../../../images/zlatanks_logo_transparant.png';
+import zlatanks_transparant_logo from '../../../../images/zlatanks_logo_transparant.png';
 
 
 export default function FixtureComponent({matchData, isNextMatch}) {
