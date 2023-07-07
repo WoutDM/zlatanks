@@ -21,7 +21,6 @@ export default function Team() {
           <h2>Verdedigers</h2>
           <p>Brikke Van de Velde</p>
           <p>Jan Perdaens</p>
-          <p>Mauritz Lowie</p>
           <p>Renaat De Cooman</p>
           <p>Lander De Backer</p>
         </div>
@@ -30,8 +29,9 @@ export default function Team() {
           <p>Wout Wartel</p>
           <p>Mathias Luypaert</p>
           <p>Senne De Backer</p>
-          <p>Jacques Baberyan</p>
+          <p>Mauritz Lowie</p>
           <p>Thibault Lowie</p>
+          <p>Jacques Baberyan</p>
         </div>
       </div>
     </div>
