@@ -1,0 +1,24 @@
+#Team_body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000E29;
+  margin-top: 30px;
+  border-radius: 15px 15px 0 0;
+}
+
+#Team_groepsfoto {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+#Team_groepsfoto_crop {
+  display: flex;
+  align-items: center;
+  height: 60%;
+  overflow: hidden;
+  padding-top: 60px;
+  border-radius: 15px 15px 0 0;
+}
