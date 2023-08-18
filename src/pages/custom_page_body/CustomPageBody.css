@@ -10,7 +10,7 @@
 
 @media (max-width: 768px) {
   #custom_body {
-    max-width: 100%;
+    max-width: 95%;
     margin-inline: 20px;
     display: flex;
     margin-left: auto;
