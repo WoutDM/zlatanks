@@ -1,6 +1,16 @@
 let matches = {
   'season20232024': [
     {
+      'opponent': 'Delhaize FC', 
+      'home': false,
+      'date': '30-8-2023',
+      'houre': '21:00',
+      'result': null, 
+      'scorers': null,
+      'friendly': true,
+      'location': 'Denderhoutem',
+    },
+    {
       'opponent': 'Ikke', 
       'home': true,
       'date': '9-9-2023',

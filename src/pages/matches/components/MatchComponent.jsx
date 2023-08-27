@@ -7,8 +7,22 @@ export default function MatchComponent({match}) {
   return (
     <div id='MatchComponent_body'>
       <div id='match_details'>
-        <p>{match.date} {match.houre} | Bellekouter</p>
-        <p>Competitie</p>
+          {
+            match.friendly !== undefined ? 
+            (
+              <>
+                <p>{match.date} {match.houre} | {match.location}</p>
+                <p>Friendly</p>
+              </>
+            ) 
+            :
+            (
+              <>
+                <p>{match.date} {match.houre} | Bellekouter</p>
+                <p>Competitie</p>
+              </> 
+            )
+          }
       </div>
       {
         match.home ?

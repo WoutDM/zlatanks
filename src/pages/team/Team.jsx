@@ -31,7 +31,8 @@ export default function Team() {
           <p>Senne De Backer</p>
           <p>Mauritz Lowie</p>
           <p>Thibault Lowie</p>
-          <p>Jacques Baberyan</p>
+          <p>Lander Buyl</p>
+          <p>Andro Martens</p>
         </div>
       </div>
     </div>
