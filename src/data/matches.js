@@ -5,7 +5,7 @@ let matches = {
       'home': false,
       'date': '30-8-2023',
       'houre': '21:00',
-      'result': 3-1, 
+      'result': '3-1', 
       'scorers': 'Lander Buyl',
       'friendly': true,
       'location': 'Denderhoutem',
