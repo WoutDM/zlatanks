@@ -6,11 +6,11 @@ let matches = {
       'date': '30-8-2023',
       'houre': '21:00',
       'result': '3-1', 
-      'scorers': [
-        {'Lander Buyl': 1},
-      ],
       'friendly': true,
       'location': 'Denderhoutem',
+      'scorers': [
+        {'name': 'Lander Buyl', 'amount': 1},
+      ],
     },
     {
       'opponent': 'Ikke', 
@@ -66,7 +66,7 @@ let matches = {
       'date': '28-10-2023',
       'houre': '20:00',
       'result':'3-3', 
-      'scorers': {'Wout Wartel':1, 'Renaat De Cooman': 1, 'Lander De Bakker':1},
+      'scorers': null,
     },
     {
       'opponent': 'Sportief', 

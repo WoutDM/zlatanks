@@ -43,3 +43,20 @@
 #match_result_oponent {
   font-size: large;
 }
+
+#scorer_container {
+  width: 100%;
+}
+
+#scorer_container_title {
+  color: rgb(175, 173, 173);
+  font-size: small;
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+
+.scorer {
+  margin-top: 5px;
+  color: rgb(175, 173, 173);
+  font-size: small;
+}

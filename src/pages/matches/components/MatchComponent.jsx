@@ -4,10 +4,15 @@ import zlatanks_transparant_logo from '../../../images/zlatanks_logo_transparant
 
 export default function MatchComponent({match}) {
 
+  const getGoalScorers = match.scorers ? match.scorers.map((scorer, index) => { 
+    return <p key={index} className='scorer'>{scorer.name}: {scorer.amount}</p>
+  }) : null
+         
+  
   return (
     <div id='MatchComponent_body'>
       <div id='match_details'>
-          {
+          { 
             match.friendly !== undefined ? 
             (
               <>
@@ -48,11 +53,22 @@ export default function MatchComponent({match}) {
             :
             (<p id='match_result_score'>VS</p>)
           }
-          <img className='match_result_logo' src={zlatanks_transparant_logo} alt="Zlatanks_logo" />
+          <img className='match_result_logo' src={zlatanks_transparant_logo} alt="Zlatanks_logo" /><br/>
+          
         </div>
+
         )
       }
-      
+      {
+        match.scorers ? (
+          <div id='scorer_container'>
+            <p id='scorer_container_title'>Goal scorers</p>
+            {getGoalScorers}
+          </div> 
+        ) : (
+          null
+        )
+      }   
     </div>
   );
 }
