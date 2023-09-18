@@ -18,7 +18,11 @@ let matches = {
       'date': '16-9-2023',
       'houre': '20:00',
       'result': '3-10 ofzo', 
-      'scorers': null,
+      'scorers': [
+        {'name': 'Thibault Lowie', 'amount': 1},
+        {'name': 'Wout Wartel', 'amount': 1},
+        {'name': 'Brikke Van de Velde', 'amount': 1},
+      ],
     },
     {
       'opponent': 'De Kapoenen', 
