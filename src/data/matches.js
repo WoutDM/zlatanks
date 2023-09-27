@@ -29,8 +29,16 @@ let matches = {
       'home': true,
       'date': '23-9-2023',
       'houre': '18:00',
-      'result': null, 
-      'scorers': null,
+      'result': '17-2', 
+      'scorers': [
+        {'name': 'Thibault Lowie', 'amount': 5},
+        {'name': 'Wout Wartel', 'amount': 4},
+        {'name': 'Matthias Luypaert', 'amount': 4},
+        {'name': 'Brikke Van de Velde', 'amount': 1},
+        {'name': 'Lander Buyl', 'amount': 1},
+        {'name': 'Mauritz Lowie', 'amount': 1},
+        {'name': 'Senne De Backer', 'amount': 1},
+      ],
     },
     {
       'opponent': 'Los Amigos', 

@@ -1,13 +1,20 @@
 import './MatchComponent.css';
+import React, { useState } from "react";
 import zlatanks_transparant_logo from '../../../images/zlatanks_logo_transparant.png';
 
 
 export default function MatchComponent({match}) {
 
+  const [showPrikker, setShowPrikker] = useState(false);
+
   const getGoalScorers = match.scorers ? match.scorers.map((scorer, index) => { 
     return <p key={index} className='scorer'>{scorer.name}: {scorer.amount}</p>
   }) : null
-         
+
+  let uitgeklapt = false;
+  const handleShowPrikkers = () => {
+    setShowPrikker(!showPrikker);
+  }
   
   return (
     <div id='MatchComponent_body'>
@@ -60,11 +67,21 @@ export default function MatchComponent({match}) {
         )
       }
       {
+        !showPrikker ? (
+          <p id='showPrikker_toggle' onClick={handleShowPrikkers}>Show prikkers</p>
+        ) : (
+          <p id='showPrikker_toggle' onClick={handleShowPrikkers}>Hide prikkers</p>
+        )
+      }
+      {
         match.scorers ? (
-          <div id='scorer_container'>
-            <p id='scorer_container_title'>Goal scorers</p>
-            {getGoalScorers}
-          </div> 
+          showPrikker ? (
+            <div id='scorer_container'>
+              {getGoalScorers}
+            </div> 
+          ) : (
+            null
+          )
         ) : (
           null
         )
