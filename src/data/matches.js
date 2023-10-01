@@ -17,7 +17,7 @@ let matches = {
       'home': true, 
       'date': '16-9-2023',
       'houre': '20:00',
-      'result': '4-14 ofzo', 
+      'result': '4-14', 
       'scorers': [
         {'name': 'Thibault Lowie', 'amount': 1},
         {'name': 'Wout Wartel', 'amount': 1},
