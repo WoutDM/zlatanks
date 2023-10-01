@@ -67,11 +67,15 @@ export default function MatchComponent({match}) {
         )
       }
       {
-        !showPrikker ? (
-          <p id='showPrikker_toggle' onClick={handleShowPrikkers}>Show prikkers</p>
+        getGoalScorers ? (
+          !showPrikker ? (
+            <p id='showPrikker_toggle' onClick={handleShowPrikkers}>Show prikkers</p>
+          ) : (
+            <p id='showPrikker_toggle' onClick={handleShowPrikkers}>Hide prikkers</p>
+          )
         ) : (
-          <p id='showPrikker_toggle' onClick={handleShowPrikkers}>Hide prikkers</p>
-        )
+          null
+        )   
       }
       {
         match.scorers ? (
