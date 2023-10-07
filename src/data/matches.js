@@ -45,8 +45,11 @@ let matches = {
       'home': false, 
       'date': '7-10-2023',
       'houre': '20:00',
-      'result': null, 
-      'scorers': null,
+      'result': '1-5', 
+      'scorers': [{'name': 'Brikke Van de Velde', 'amount':2},
+{'name': 'Wout Wartel', 'amount':2},
+{'name': 'Senne De Backer', 'amount':1},
+],
     },
     {
       'opponent': 'Hekelbeek', 
