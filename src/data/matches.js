@@ -19,8 +19,8 @@ let matches = {
       'houre': '20:00',
       'result': '4-14', 
       'scorers': [
+{'name': 'Wout Wartel', 'amount': 2},
         {'name': 'Thibault Lowie', 'amount': 1},
-        {'name': 'Wout Wartel', 'amount': 1},
         {'name': 'Brikke Van de Velde', 'amount': 1},
       ],
     },
