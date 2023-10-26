@@ -46,26 +46,33 @@ let matches = {
       'date': '7-10-2023',
       'houre': '20:00',
       'result': '1-5', 
-      'scorers': [{'name': 'Brikke Van de Velde', 'amount':2},
-{'name': 'Wout Wartel', 'amount':2},
-{'name': 'Senne De Backer', 'amount':1},
-],
+
+      'scorers': [
+        {'name': 'Brikke Van de Velde', 'amount':2},
+        {'name': 'Wout Wartel', 'amount':2},
+        {'name': 'Senne De Backer', 'amount':1},
+      ],
     },
     {
       'opponent': 'Hekelbeek', 
       'home': false, 
       'date': '14-10-2023',
       'houre': '16:00',
-      'result': null, 
-      'scorers': null,
+      'result': '7-3', 
+      'scorers': [
+        {'name': 'Senne De Backer', 'amount': 2},
+        {'name': 'Thibault Lowie', 'amount': 1},
+      ],
     },
     {
       'opponent': 'Loemek', 
       'home': false, 
       'date': '21-10-2023',
       'houre': '19:00',
-      'result': null, 
-      'scorers': null,
+      'result': '9-1', 
+      'scorers': [
+        {'name': 'Thibault Lowie', 'amount': 1},
+      ],
     },
     {
       'opponent': 'Real Illegal', 

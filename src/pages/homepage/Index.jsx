@@ -3,6 +3,7 @@ import matches from '../../data/matches';
 import FixtureComponent from '../homepage/components/fixture_component/FixtureComponent';
 import React, { useState } from 'react';
 import transfer_LanderAndro from '../../images/Transfer_LanderAndro2.png';
+import newKits from '../../images/newKits.svg';
 
 export default function Index() {
 
@@ -60,7 +61,7 @@ export default function Index() {
   return (
     <div id='Index_body'>
       <div id='main_content'>
-        <img id='main_content_img' src={transfer_LanderAndro} alt="transfer_LanderAndro"/>
+        <img id='main_content_img' src={newKits} alt="transfer_LanderAndro"/>
         {/* <h1><span id='word_highlight'>Welkom</span> op de officiële Zlatanks website!</h1>
         <p>
           Toekomstige mededelingen, nieuws en transfers zullen
