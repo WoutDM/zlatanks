@@ -1,0 +1,7 @@
+HOME PAGE:
+Image loading.
+Check if last match is found based on date instead of result excistence.
+
+MATCHES PAGE:
+Button to go to top of the page.
+Directly teleport to next match.

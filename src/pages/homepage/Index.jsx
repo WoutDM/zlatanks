@@ -1,13 +1,23 @@
 import './Index.css';
 import matches from '../../data/matches';
 import FixtureComponent from '../homepage/components/fixture_component/FixtureComponent';
-import React, { useState } from 'react';
-import transfer_LanderAndro from '../../images/Transfer_LanderAndro2.png';
-import newKits from '../../images/newKits.svg';
+import React, { useState, useEffect } from 'react';
+import mainImage from '../../images/newKits.svg';
+import ClipLoader from "react-spinners/ClipLoader";
 
 export default function Index() {
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [imageLoaded, setImageLoaded] = useState(false);
+  //Todo: fix image loading, HTML part still needs to be fixed for this code to have purpose.
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = mainImage;
+    img.onload = () => {
+      setImageLoaded(true);
+    };
+  }, [mainImage]);
 
   const handleResize = () => {
     setWindowWidth(window.innerWidth);
@@ -38,8 +48,10 @@ export default function Index() {
     } else if (windowWidth < 650) {
       customMatchesList = [matches.season20232024[indexOfNextMatch]];
     };
-      
+    
+    //Todo: check for date instead of result.
     const customListNextGameIndex = customMatchesList.findIndex(x => x.result == null);
+
   return (
     <>
       {
@@ -61,15 +73,40 @@ export default function Index() {
   return (
     <div id='Index_body'>
       <div id='main_content'>
-        <img id='main_content_img' src={newKits} alt="transfer_LanderAndro"/>
-        {/* <h1><span id='word_highlight'>Welkom</span> op de officiële Zlatanks website!</h1>
-        <p>
-          Toekomstige mededelingen, nieuws en transfers zullen
-          hier te zien zijn.
-        </p> */}
+        { 
+        mainImage 
+        ? 
+          imageLoaded 
+          ?
+            (
+              <img id='main_content_img' src={mainImage} alt="transfer_LanderAndro"/>
+            )
+          :
+            (
+              <div id='imageLoader'>
+                <ClipLoader
+                color={'red'}
+                loading={!imageLoaded}
+                size={40}
+                aria-label="Loading Spinner"
+                data-testid="loader"
+                />
+              </div>
+            )
+        :
+          (
+            <>
+              <h1><span id='word_highlight'>Welkom</span> op de officiële Zlatanks website!</h1>
+              <p>
+                Toekomstige mededelingen, nieuws en transfers zullen
+                hier te zien zijn.
+              </p>
+            </>
+          )
+        }
       </div>
       <div id='homepage_fixtures'>
-        {
+         {
           getFixtures()
         }
       </div>

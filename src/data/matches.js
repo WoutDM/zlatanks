@@ -79,8 +79,11 @@ let matches = {
       'home': false, 
       'date': '28-10-2023',
       'houre': '16:00',
-      'result': null, 
-      'scorers': null,
+      'result': '11-4', 
+      'scorers': [
+        {'name': 'Senne De Backer', 'amount': 2},
+        {'name': 'Lander De Backer', 'amount': 1},
+      ],
     },
     {
       'opponent': 'Sportief', 
