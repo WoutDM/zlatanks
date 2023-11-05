@@ -90,8 +90,13 @@ let matches = {
       'home': false,
       'date': '4-11-2023',
       'houre': '19:00',
-      'result': null,
-      'scorers': null,
+      'result': '2-6',
+      'scorers': [
+        {'name': 'Senne De Backer', 'amount': 2},
+        {'name': 'Wout Wartel', 'amount': 2},
+        {'name': 'Renaat De Cooman', 'amount': 1},   
+        {'name': 'Lander Buyl', 'amount': 1},
+      ],
     },
     {
       'opponent': 'Ikke', 
