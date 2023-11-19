@@ -103,8 +103,8 @@ let matches = {
       'home': true, 
       'date': '18-11-2023',
       'houre': '19:00',
-      'result': null,
-      'scorers': null,
+      'result': '1-6',
+      'scorers': {'name': 'Lander Buyl', 'amount': 1},
     },
     {
       'opponent': 'Real Pakfriet', 
