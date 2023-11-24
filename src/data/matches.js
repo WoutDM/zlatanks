@@ -104,7 +104,9 @@ let matches = {
       'date': '18-11-2023',
       'houre': '19:00',
       'result': '1-6',
-      'scorers': {'name': 'Lander Buyl', 'amount': 1},
+      'scorers': [
+        {'name': 'Lander Buyl', 'amount': 1}
+      ],
     },
     {
       'opponent': 'Real Pakfriet', 
