@@ -15,7 +15,7 @@ nav a {
 }
 
 nav a :hover {
-  text-decoration: underline 2px;
+  text-decoration: underline 2px #daa520;
   text-underline-offset: 17px;
 }
 
@@ -28,10 +28,13 @@ nav a :hover {
 
 #navbar_top {
   width: 100%;
+  padding-bottom: 8px;
   display: flex;
   justify-content: center;
-  background-color: #E40C2B;
+  background-color: rgb(29, 28, 28);
+  border-bottom: 1px solid #daa520;
 }
+
 #logo_and_name {
   width: 170px;
   display: flex;
@@ -56,7 +59,8 @@ nav a :hover {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: rgb(198, 4, 40);
+  background-color: rgb(12, 12, 12);
+  /* border-bottom: 1px solid #daa520; */
 }
 
 #navbar_bottom_content {
