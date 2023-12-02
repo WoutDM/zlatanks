@@ -1,5 +1,4 @@
 HOME PAGE:
-Image loading.
 Check if last match is found based on date instead of result excistence.
 
 MATCHES PAGE:
