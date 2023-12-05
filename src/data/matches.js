@@ -121,8 +121,11 @@ let matches = {
       'home': false, 
       'date': '2-12-2023',
       'houre': '19:00',
-      'result': null, 
-      'scorers': null,
+      'result': '12-2', 
+      'scorers': [
+        {'name': 'Matthias Luypaert', 'amount': 1},
+        {'name': 'Senne De Backer', 'amount': 1},
+      ],
     },
     {
       'opponent': 'Anciens', 
