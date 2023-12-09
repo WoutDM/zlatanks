@@ -82,6 +82,7 @@ let matches = {
       'result': '11-4', 
       'scorers': [
         {'name': 'Senne De Backer', 'amount': 2},
+        {'name': 'Matthias Luypaert', 'amount': 1},
         {'name': 'Lander De Backer', 'amount': 1},
       ],
     },
