@@ -133,16 +133,22 @@ let matches = {
       'home': true, 
       'date': '9-12-2023',
       'houre': '20:00',
-      'result': null, 
-      'scorers': null,
+      'result': '3-11',
+      'scorers': [
+        {'name': 'Matthias Luypaert', 'amount': 1},
+        {'name': 'Wout Wartel', 'amount': 1},
+        {'name': 'Thibault Lowie', 'amount': 1},
+      ],
     },
     {
       'opponent': 'Los Amigos', 
       'home': false, 
       'date': '16-12-2023',
       'houre': '20:00',
-      'result': null, 
-      'scorers': null,
+      'result': '0-3',
+      'scorers': [
+        {'name': 'Thibault Lowie', 'amount': 3},
+      ],
     },
     {
       'opponent': 'Loemek', 
